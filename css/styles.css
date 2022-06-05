@@ -12,6 +12,7 @@
     --portfolio-set: 30px;
 }
 
+a,
 p,
 h1,
 h2,
@@ -38,6 +39,7 @@ body{
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 .link {
     text-decoration: none;
@@ -61,6 +63,10 @@ img {
     align-items: center;
 }
 
+.nav{
+    display: flex;
+    align-items: center;
+}
 .logo{
     color: #000000;
     font-family: 'Raleway', sans-serif;
@@ -133,6 +139,8 @@ img {
 .hero{
     background-color: var(--second-background-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title{
     margin-left: auto;
@@ -231,8 +239,8 @@ padding-top: 0;
 .team{
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--main-background-color);
-}
+    background-color: var(--team-background-color);
+    }
 
 .team-title{
     margin-bottom: 50px;
@@ -285,7 +293,6 @@ padding-top: 0;
 
 .logo-link{
     display: inline-block;
-    margin-bottom: 20px;
     color: var(--main-title-color);
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -297,9 +304,12 @@ padding-top: 0;
     color: var(--accent-color);
 }
 
+.footer-adress{
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
 .adress{
     display: inline-block;
-    margin-bottom: 9px;
     font-style: normal;
     color: var(--main-title-color);
     font-size: 14px;
@@ -311,9 +321,11 @@ padding-top: 0;
     color: var(--accent-color);
 }
 
+.footer-mail{
+    margin-bottom: 9px;
+}
 .contact-mail{
     display: inline-block;
-    margin-bottom: 9px;
     font-style: normal;
     color: var(--contact-text-color);
     font-size: 14px;
@@ -322,7 +334,6 @@ padding-top: 0;
 
 .contact-tel {
     display: inline-block;
-    margin-bottom: 0px;
     font-style: normal;
     color: var(--contact-text-color);
     font-size: 14px;
@@ -349,13 +360,19 @@ display: none;
 }
 
 .filtres-list{
+    margin-bottom: 56px;
     text-align: center;
     display: flex;
     justify-content: center;
 }
+
+.filtres-item + .filtres-item{
+    margin-left: 8px;
+}
+
 .btn-filtres{
    display: inline-block;
-   margin-bottom: 56px;
+
    padding: 6px 22px;
    background-color: var(--team-background-color);
    color: var(--main-text-color);
@@ -388,11 +405,8 @@ display: none;
     flex-basis: calc(100%/3 - var(--portfolio-set));
     margin-left: var(--portfolio-set);
     margin-top: var(--portfolio-set);
-}
-
-.card{
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background: var(--header-background-color);
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .work-content{
